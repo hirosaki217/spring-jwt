@@ -3,6 +3,7 @@ package spring.jwt.jms;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,7 @@ import com.google.gson.Gson;
 
 @Component
 @Slf4j
+//@Scope("prototype")
 public class JmsProducer {
 
     @Autowired

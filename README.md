@@ -17,3 +17,13 @@ tao project de nhan message;
 cau hinh activemq nhan message
 ![Getting Started](./images/cau-hinh-ben-nhan.PNG)
 ![Getting Started](./images/consumer.PNG)
+
+chỉnh host mysql để container kết nối được với mysql ở máy host:
+<br/>
+![Getting Started](./images/chinh%20property.PNG)
+
+build file jar và tạo docker file
+![Getting Started](./images/build%20file%20jar%20va%20tao%20dockerfile.PNG)
+<br/>
+get dữ liệu từ container
+![Getting Started](./images/build%20file%20jar%20va%20tao%20dockerfile.PNG)

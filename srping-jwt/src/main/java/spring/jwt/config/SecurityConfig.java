@@ -34,7 +34,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         .disable()
         .authorizeRequests()
         .antMatchers("/register")
+        .permitAll()
+        .antMatchers("/api/*")
         .permitAll();
+        
 		http.addFilterBefore(jwtRequestFilter,
                 UsernamePasswordAuthenticationFilter.class)
                 .csrf().disable();
@@ -44,3 +47,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	
 }
+
+// aplication.properties -> security -> entity -> repository -> service -> controller -> jwt -> docker -> docke-compose -> activemq -
+// config
+
